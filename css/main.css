@@ -1,0 +1,310 @@
+html, body
+{
+	font-family: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
+	margin: 0;
+}
+
+body
+{
+	background: #0073cc url(../img/bckgrd-strip.gif) 0 0 repeat-x;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#sparkles
+{
+	background: url(../img/new-heading.gif) 50% 0 no-repeat;
+	padding-top: 130px;
+}
+
+#header
+{
+	display: none;
+}
+
+.small-print
+{
+	color: #70a6d1;
+	font-size: 12px;
+	margin: 20px 0 0 0;
+	text-align: center;
+}
+
+.small-print a
+{
+	background: none;
+	color: #70a6d1;
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+.small-print a img
+{
+	border: none;
+	margin-bottom: -5px;
+}
+
+
+h1
+{
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 18px;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+div#grid
+{
+	margin: 10px auto 10px auto;
+	padding: 0;
+	width: 450px;
+}
+
+div#grid div
+{
+	float: left;
+	
+}
+
+div#grid div.line
+{
+	clear: left;
+	width: 430px;
+	margin-top: -12px;
+	margin-left: 34px;
+	padding-left: 12px;
+}
+
+div#grid div.alt
+{
+	margin-left: 25px;
+}
+
+div#grid > div.alt
+{
+	margin-left: 15px;
+}
+
+div#grid div.line div
+{
+	display: block;
+	/*background: url(../img/khaki.gif) 50% 50% no-repeat;*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/khaki.png', sizingMethod='scale');
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	margin-left: -7px;
+	margin-top: 0px;
+}
+
+div#grid div.line div:hover,
+div#grid div.line div.hover
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/khaki-hover.png', sizingMethod='scale');
+}
+
+div#grid div.line div.blocked,
+div#grid div.line div.hover.blocked
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/block.png', sizingMethod='scale');
+}
+
+div#grid div.line>div
+{
+	background: url(../img/khaki.png) 50% 50% no-repeat;
+}
+
+div#grid div.line>div:hover
+{
+	background: url(../img/khaki-hover.png) 50% 50% no-repeat;
+}
+
+div#grid div.line div span
+{
+	width: 34px;
+	height: 32px;
+	display: block;
+	border: red dotted 1px;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+div#cat2
+{
+	width: 44px;
+	height: 50px;
+	position: absolute;
+	z-index: 50;
+	margin-top: -14px;
+}
+
+div.n
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/cat.png', sizingMethod='scale');
+}
+
+div.r
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/cat_r.png', sizingMethod='scale');
+}
+
+div>div#cat2.n
+{
+	background: url(../img/cat.png) 50% 50% no-repeat;
+}
+
+div>div#cat2.r
+{
+	background: url(../img/cat_r.png) 50% 50% no-repeat;
+}
+
+div#grid div>div.blocked,
+div#grid div>div.blocked:hover
+{
+	background: url(../img/block.png) 50% 50% no-repeat;
+}
+
+div.ie_hack
+{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+div.alert
+{
+	margin: 0 auto 0 auto;
+	width: 210px;
+	padding: 25px 15px;
+	height: 70px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/box1.png', sizingMethod='scale');
+}
+
+div.alert *
+{
+	display: none;
+}
+
+div#success1 div.alert
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/box1s.png', sizingMethod='scale');
+}
+
+div#fail1 div.alert
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/box1f.png', sizingMethod='scale');
+}
+
+div#success1>div.alert
+{
+	background: url(../img/box1s.png) 50% 50% no-repeat;
+}
+
+div#fail1>div.alert
+{
+	background: url(../img/box1f.png) 50% 50% no-repeat;
+}
+
+div.message
+{
+	text-align: center;
+	margin: 150px auto 0 auto;
+	background: #FFF;
+	width: 360px;
+	padding: 5px 10px 10px 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-box-shadow: 0px 4px 6px #333;
+	-moz-box-shadow: 0px 4px 6px #333;
+	position: relative;
+}
+
+div.message#well-done
+{
+	background: #FFF url(../img/cooked-turkey.gif) 50% 28px no-repeat;
+	height: 360px;
+	width: 360px;
+	margin: 135px auto 0 auto;
+	cursor: pointer;
+}	
+
+div.message img
+{
+	border: none;
+}
+
+div.message#well-done *
+{
+	display:none;
+}
+
+div.first
+{
+	padding-top: 11px;
+}
+
+#fail2
+{
+	top: 70px;
+}
+
+div.message a
+{
+	background: #004a80;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 5px 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+div.message a:hover
+{
+	background: #003a64;
+}
+
+div.message a:active
+{
+	background: #012d4d;
+	color: #fff;
+}
+
+div#instructions
+{
+	position: absolute;
+	left: 50%;
+	top: 115px;
+	margin-left: -312px;
+	z-index: 300;
+	width: 250px;
+	height: 235px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/speech.png', sizingMethod='scale');
+}
+
+div>div#instructions
+{
+	background: url(../img/speech.png) 0 0 no-repeat;
+}
+
+div#instructions div
+{
+	display: none;
+	background: #FFF;
+	padding: 10px 20px;
+	width: 240px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}

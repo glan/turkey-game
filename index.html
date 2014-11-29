@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Glan Thomas - Substance Design Ltd."/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<meta name="viewport" id="viewport" content="initial-scale=0.7 user-scalable=no" />
+		
+		<title>Trap the Turkey | DMW Group</title>
+		<link rel="stylesheet" rev="stylesheet" href="css/main.css" media="all" charset="utf-8" />
+		<link rel="apple-touch-icon" href="img/iphone-icon.png" />
+		<script src="js/prototype.js" type="text/javascript"></script>
+ 		<script src="js/scriptaculous.js" type="text/javascript"></script>
+ 		<script src="js/game.js" type="text/javascript"></script>
+ </head>
+	<body onresize="TurkeyGame.draw()">
+	
+		<div id="imagepreload" style="width:100px; height:100px; overflow:hidden; left: -100px; top: 0; position: absolute;">
+			<img src="img/khaki-hover.png" alt="hover"/>
+			<img src="img/cat.png" alt="turkey (left)"/>
+			<img src="img/cat_r.png" alt="turkey (right)"/>
+			<img src="img/box1s.png" alt="alert (success)"/>
+			<img src="img/box1f.png" alt="alert (fail)"/>
+			<img src="img/cooked-turkey.gif" alt="alert (win)"/>
+		</div>
+	
+		<div id="sparkles">
+			<div id="header">
+				<p id="roll-up">Roll up! Roll up!</p>
+				<h1>Capture the turkey</h1>
+				<p id="no-prize">and don't win a prize!</p>
+			</div>
+			
+			<div id="instructions" onclick="new Effect.Fade('instructions');"><div><p>Try to encircle the turkey without letting it get out!</p>
+			<p>Start by clicking on any of the beige hexagons and ring-fence that bird.
+			Beware though, this is a canny creature and will do its best to escape!</p></div></div>
+		
+			<div id="grid">
+				<noscript>
+					<p>You need Javascript enabled to view this content.</p>
+				</noscript>	
+			</div>
+			
+			<div id="success1" class="ie_hack" style="display:none;">
+				<div class="alert"><div><h2>Success!</h2><p>You trapped the turkey</p></div></div>
+			</div>
+			
+			<div id="success2" class="ie_hack" style="display:none;">
+				<div class="message" id="well-done" onclick="TurkeyGame.restart()">
+					<p id="cookin">Cookin'!</p>
+					<p id="turkey">Cooked turkey</p>
+					<p id="sgreetings">Season's Greetings</p>
+					<p id="dmwlogo">DMW Group</p>
+				</div>
+			</div>
+			
+			<div id="fail1" class="ie_hack" style="display:none;">
+				<div class="alert"><div><h2>You let the turkey get away!</h2><p>Better luck next time</p></div></div>
+			</div>
+			
+			<div id="fail2" class="ie_hack" style="display:none;">
+				<div class="message">
+					<p><img src="img/DMWGroup.gif" alt="Seasion's greetings from the DMW Group"/></p>
+					<p><a onclick="TurkeyGame.restart()" href="#">Play again</a></p>
+				</div>
+			</div>
+			
+			<div id="cat2" class="n">
+			</div>
+		
+			<div class="clear"></div>
+			<p class="small-print">13 Charles II Street, London SW1Y 4QU<a href="http://www.dmwgroup.com">www.dmwgroup.com</a></p>
+			<p class="small-print"><img src="img/dmw-white.gif" alt="DMW Group"/></p>
+			
+			<p class="small-print" style="font-size:11px;">Game designed and built by <a href="http://www.substance-design.com"><img src="img/substance_logo.gif" alt="Substance Design"/></a></p>
+		</div>
+	</body>
+</html>
